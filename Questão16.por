@@ -1,9 +1,11 @@
 programa {
+  inclua biblioteca Texto-->t
   funcao inicio() {
-  cadeia letra
+  cadeia modo
   escreva("Digite uma das letras: A, S ou P: ")
-  leia(letra)
-  escolha(letra){
+  leia(modo)
+  modo=t.caixa_alta(modo)
+  escolha(modo){
   caso "A":
   escreva("Apresentação.")
   pare
